@@ -1,0 +1,766 @@
+2015/07/27 12:45:47 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (C:\MAMP\htdocs\yii_movies\protected\views\layouts\main.php:51)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\MAMP\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 C:\MAMP\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 C:\MAMP\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(214): CContentDecorator->run()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(308): SiteController->endWidget()
+#6 C:\MAMP\htdocs\yii_movies\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 C:\MAMP\htdocs\yii_movies\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\MAMP\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\MAMP\htdocs\yii_movies\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_movies/
+in C:\MAMP\htdocs\yii_movies\protected\views\layouts\main.php (51)
+in C:\MAMP\htdocs\yii_movies\protected\views\layouts\column1.php (6)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\SiteController.php (32)
+2015/07/27 20:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\MAMP\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_movies/index.php?r=gii
+---
+2015/07/27 20:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\MAMP\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_movies/index.php?r=gii
+---
+2015/07/28 10:16:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'movieblog_db.tbl_review' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_review`.
+in C:\MAMP\htdocs\yii_movies\index.php (15)
+2015/07/28 10:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "update".' in C:\MAMP\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('update')
+#1 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_movies/index.php?r=update
+---
+2015/07/28 14:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "json".' in C:\MAMP\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('json')
+#1 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_movies/index.php?r=json
+---
+2015/07/28 14:56:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 14:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 15:01:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 15:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 15:01:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 15:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view=json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('view=json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view=json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/view...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/view=json
+---
+2015/07/28 15:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json.php".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json.php')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json.php')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json.php
+---
+2015/07/28 15:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 15:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "json".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('json')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('json')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('moviesNews/json')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=moviesNews/json
+---
+2015/07/28 19:16:18 [error] [exception.CException] exception 'CException' with message 'ReviewController cannot find the requested view "index".' in C:\MAMP\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\MAMP\htdocs\yii_movies\protected\controllers\ReviewController.php(128): CController->render('index', Array)
+#2 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): ReviewController->actionIndex()
+#3 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('review')
+#13 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii_movies/index.php?r=review
+---
+2015/07/28 20:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "_form".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('_form')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('_form')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/_form')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/_form
+---
+2015/07/28 20:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "_from".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('_from')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('_from')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/_from')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/_from
+---
+2015/07/28 20:35:33 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\views\news\create.php:18)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\zii\widgets\CListView.php(291): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\MAMP\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\MAMP\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(181): CListView->run()
+#6 C:\MAMP\htdocs\yii_movies\protected\views\news\index.php(20): NewsController->widget()
+#7 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#11 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(128): NewsController->render()
+#12 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#18 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#21 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#22 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#24 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/index
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\index.php (20)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (128)
+2015/07/28 20:35:41 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\views\news\create.php:18)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\zii\widgets\CListView.php(291): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\MAMP\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\MAMP\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(181): CListView->run()
+#6 C:\MAMP\htdocs\yii_movies\protected\views\news\index.php(20): NewsController->widget()
+#7 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#11 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(128): NewsController->render()
+#12 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#18 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#21 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#22 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#24 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/index
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\index.php (20)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (128)
+2015/07/28 20:59:56 [error] [php] Use of undefined constant php - assumed 'php' (C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php:39)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii_movies\protected\views\news\create.php(18): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#6 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(79): NewsController->render()
+#7 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionCreate()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#10 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#16 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#17 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/create
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (39)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (79)
+2015/07/28 21:13:25 [error] [php] require(imageUpload.php): failed to open stream: No such file or directory (C:\MAMP\htdocs\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php(38): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#3 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#4 C:\MAMP\htdocs\yii_movies\protected\views\news\create.php(18): NewsController->renderPartial()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#7 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#9 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(79): NewsController->render()
+#10 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionCreate()
+#11 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#16 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#20 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/create
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (38)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (79)
+2015/07/28 21:20:51 [error] [php] require(imageUpload.php): failed to open stream: No such file or directory (C:\MAMP\htdocs\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php(38): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#3 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#4 C:\MAMP\htdocs\yii_movies\protected\views\news\create.php(18): NewsController->renderPartial()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#7 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#9 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(79): NewsController->render()
+#10 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionCreate()
+#11 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#16 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#20 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/create
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (38)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (79)
+2015/07/28 21:21:02 [error] [php] require(imageUpload.php): failed to open stream: No such file or directory (C:\MAMP\htdocs\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php(38): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#3 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#4 C:\MAMP\htdocs\yii_movies\protected\views\news\create.php(18): NewsController->renderPartial()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#7 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#9 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(79): NewsController->render()
+#10 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionCreate()
+#11 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#16 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#20 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/create
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (38)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (79)
+2015/07/28 21:22:29 [error] [php] require(imageUpload.php): failed to open stream: No such file or directory (C:\MAMP\htdocs\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php(38): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#3 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#4 C:\MAMP\htdocs\yii_movies\protected\views\news\create.php(18): NewsController->renderPartial()
+#5 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#6 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#7 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#9 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(79): NewsController->render()
+#10 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionCreate()
+#11 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#16 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#20 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/create
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (38)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\create.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (79)
+2015/07/28 21:33:57 [error] [php] include(imageUpload.php): failed to open stream: No such file or directory (C:\MAMP\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\MAMP\htdocs\yii\framework\YiiBase.php(303): class_exists()
+#2 C:\MAMP\htdocs\yii\framework\web\CWidgetFactory.php(146): import()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(180): NewsController->createWidget()
+#5 C:\MAMP\htdocs\yii_movies\protected\views\news\index.php(17): NewsController->widget()
+#6 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#10 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(128): NewsController->render()
+#11 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(49): NewsController->actionIndex()
+#12 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#17 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#20 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#21 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/
+in C:\MAMP\htdocs\yii_movies\protected\views\news\index.php (17)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (128)
+in C:\MAMP\htdocs\yii_movies\index.php (15)
+2015/07/28 21:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageUpload.php".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageUpload.php')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload.php')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload.php
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/index
+---
+2015/07/28 21:40:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageUpload".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageUpload')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/index
+---
+2015/07/28 21:40:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageUpload".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageUpload')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload
+---
+2015/07/28 21:41:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageUpload".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageUpload')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news
+---
+2015/07/28 21:42:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageUpload".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageUpload')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload&id=8
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/create
+---
+2015/07/28 21:43:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageUpload".' in C:\MAMP\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageUpload')
+#1 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#2 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#3 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload&id=9
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/create
+---
+2015/07/28 21:48:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\MAMP\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\MAMP\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#8 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#9 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload&id=11
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/create
+---
+2015/07/28 21:49:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\MAMP\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\MAMP\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#8 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#9 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload&id=12
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/create
+---
+2015/07/28 21:50:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\MAMP\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\MAMP\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageUpload')
+#8 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/imageUploa...')
+#9 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/imageUpload&id=13
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/create
+---
+2015/07/28 21:52:22 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php:7)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(54): NewsController->render()
+#3 unknown(0): NewsController->actionView()
+#4 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#8 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#14 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#15 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=14
+in C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php (7)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (54)
+in C:\MAMP\htdocs\yii_movies\index.php (15)
+2015/07/28 21:58:10 [error] [exception.CException] exception 'CException' with message 'NewsController cannot find the requested view "image/create".' in C:\MAMP\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php(10): CController->renderPartial('image/create')
+#1 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\MAMP\\htdocs\\...')
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\MAMP\\htdocs\\...', Array, true)
+#3 C:\MAMP\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\MAMP\\htdocs\\...', Array, true)
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('imageUpload', Array, true)
+#5 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(56): CController->render('imageUpload', Array)
+#6 [internal function]: NewsController->actionView('17')
+#7 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#8 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#9 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('news/view')
+#19 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\MAMP\htdocs\yii_movies\index.php(15): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=17
+HTTP_REFERER=http://localhost:8888/yii_movies/index.php?r=news/create
+---
+2015/07/28 21:59:02 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\views\news\view.php:7)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php(10): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#6 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(56): NewsController->render()
+#7 unknown(0): NewsController->actionView()
+#8 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#18 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=18
+in C:\MAMP\htdocs\yii_movies\protected\views\news\view.php (7)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php (10)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (56)
+2015/07/28 21:59:39 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php:20)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php(10): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#6 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(56): NewsController->render()
+#7 unknown(0): NewsController->actionView()
+#8 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#18 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=19
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (20)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php (10)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (56)
+2015/07/28 22:02:12 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php:20)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php(9): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#6 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(56): NewsController->render()
+#7 unknown(0): NewsController->actionView()
+#8 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#18 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=21
+in C:\MAMP\htdocs\yii_movies\protected\views\news\_form.php (20)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php (9)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (56)
+2015/07/28 22:02:46 [error] [php] Undefined variable: dataProvider (C:\MAMP\htdocs\yii_movies\protected\views\news\index.php:18)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php(9): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#6 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(56): NewsController->render()
+#7 unknown(0): NewsController->actionView()
+#8 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#18 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=22
+in C:\MAMP\htdocs\yii_movies\protected\views\news\index.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php (9)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (56)
+2015/07/28 22:04:13 [error] [php] Undefined variable: dataProvider (C:\MAMP\htdocs\yii_movies\protected\views\news\index.php:18)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#1 C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php(9): NewsController->renderPartial()
+#2 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\MAMP\htdocs\yii\framework\web\CBaseController.php(95): NewsController->renderInternal()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(869): NewsController->renderFile()
+#5 C:\MAMP\htdocs\yii\framework\web\CController.php(782): NewsController->renderPartial()
+#6 C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php(56): NewsController->render()
+#7 unknown(0): NewsController->actionView()
+#8 C:\MAMP\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#12 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#15 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#18 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#19 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=24
+in C:\MAMP\htdocs\yii_movies\protected\views\news\index.php (18)
+in C:\MAMP\htdocs\yii_movies\protected\views\news\imageUpload.php (9)
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (56)
+2015/07/28 22:07:43 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php:58)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#3 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#6 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#9 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#10 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=26
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (58)
+in C:\MAMP\htdocs\yii_movies\index.php (15)
+2015/07/28 22:23:56 [error] [php] Undefined variable: model (C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php:56)
+Stack trace:
+#0 C:\MAMP\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\MAMP\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(133): NewsController->runAction()
+#3 C:\MAMP\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\MAMP\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\MAMP\htdocs\yii\framework\web\filters\CInlineFilter.php(58): NewsController->filterAccessControl()
+#6 C:\MAMP\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\MAMP\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\MAMP\htdocs\yii\framework\web\CController.php(265): NewsController->runActionWithFilters()
+#9 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(282): NewsController->run()
+#10 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\MAMP\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\MAMP\htdocs\yii_movies\index.php(15): CWebApplication->run()
+REQUEST_URI=/yii_movies/index.php?r=news/view&id=27
+in C:\MAMP\htdocs\yii_movies\protected\controllers\NewsController.php (56)
+in C:\MAMP\htdocs\yii_movies\index.php (15)
