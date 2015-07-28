@@ -33,7 +33,10 @@ class MovieBlogController extends Controller
         public function actionMovieDetails()
 	{
                 
-                 
+                 $baseUrl = Yii::app()->baseUrl; 
+                $cs = Yii::app()->getClientScript();
+                $cs->registerScriptFile($baseUrl.'/js/tmdb_details.js');
+                  $cs->registerScriptFile($baseUrl.'/js/Diggjson.js');
 		$this->render('MovieDetails');
 	}
 	// Uncomment the following methods and override them if needed

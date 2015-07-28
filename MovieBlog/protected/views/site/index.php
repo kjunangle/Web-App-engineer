@@ -3,18 +3,188 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
+ 
+ 
+    
+    
+  
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://i.telegraph.co.uk/multimedia/archive/01204/pig1_1204022c.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="..." alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+  <!-- Page Content -->
+    <div class="container">
+
+        <!-- Coming soon -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Coming soon
+                </h1>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> IRON MAN 12 </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">View more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> ANT MAN </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">View more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i>MINNIONS</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">View more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i>MINNIONS</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Movie review -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="page-header">Moview Review</h2>
+            </div>
+            <div class ="col-lg-4">
+                <h2 class="page-header">Box Office</h2>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- News -->
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="page-header">Movie News</h2>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>Update</b></div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="demo">
+
+                            <li class="news-item">
+                            <table cellpadding="4">
+                            <tr>
+                            <td><img src="/assets/image/1.png" width="60" class="img-circle" /></td>
+                            <td> News 1<a href="#">Read more...</a></td>
+                            </tr>
+                            </table>
+                            </li>
+
+                            <li class="news-item">
+                            <table cellpadding="4">
+                            <tr>
+                            <td><img src="/assets/image/2.png" width="60" class="img-circle" /></td>
+                            <td> News 2<a href="#">Read more...</a></td>
+                            </tr>
+                            </table>
+                            </li>
+
+                            <li class="news-item">
+                            <table cellpadding="4">
+                            <tr>
+                            <td><img src="/assets/image/3.png" width="60" class="img-circle" /></td>
+                            <td> News 3<a href="#">Read more...</a></td>
+                            </tr>
+                            </table>
+                            </li>
+
+                         ...
+
+                        </ul>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="panel-footer"> </div>
+                        </div>
+                        </div>
+            <div class="col-lg-4">
+                <h2 class="page-header">Timeline</h2>
+                <a class="twitter-timeline" href="https://twitter.com/a_c_h_r" data-widget-id="625899581000146945">Tweets by </a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+            
+        </div>
+        <!-- /.row -->
+        
+        
+        
+        
+        
+      
+        <!-- Controls -->
+        <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script>
+  
+
+     

@@ -8,6 +8,10 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
+        'theme'=>'movietheme',
+	'aliases' => array(
+        'bootstrap' => 'ext.bootstrap'
+    ),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -16,11 +20,18 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'bootstrap.*',
+        'bootstrap.components.*',
+        'bootstrap.behaviours.*',
+        'bootstrap.helpers.*',
+        'bootstrap.widgets.*'
 	),
 
-	'modules'=>array(
-		// uncomment the following to enable the Gii tool
-		
+'modules'=>array(
+		'bootstrap' => array(
+			'class' => 'bootstrap.BootStrapModule'
+			),
+    
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'1234',
@@ -33,7 +44,8 @@ return array(
 	// application components
 	'components'=>array(
             
-     
+      'boostrap' => array(
+            'class'=> 'boostrap.components.BsApi'),
             
 		'user'=>array(
 			// enable cookie-based authentication
