@@ -1,66 +1,106 @@
-<?php /* @var $this Controller */ ?>
+<?php
+/* @var $this SiteController */
+
+ 
+?>
+ 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="language" content="en">
+   
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print">
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection">
-	<![endif]-->
+    
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
+  
+    <?php Yii::app() -> clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/asset/css/bootstrap.min.css');?>
+    
+    <?php Yii::app() -> clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/asset/css/modern-business.css');?>
+    
 
-        
-        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  
+    <?php Yii::app() -> clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/asset/font-awesome/css/font-awesome.min.css');?>
+ 
+   <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
         
        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
        <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+       
+       
+       <?php Yii::app()-> clientScript->registerScriptFile(Yii::app()->baseUrl.'/assets/asset/js/jquery.bootstrap.newsbox.min.js',CClientScript::POS_END); ?>
+       <?php Yii::app()-> clientScript->registerScriptFile(Yii::app()->baseUrl.'/assets/asset/js/bootstrap.min.js',CClientScript::POS_END); ?>
 </head>
 
 <body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main.php">Movie Blog</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Movie <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="<?php echo Yii::app()->baseUrl."/movieblog/upcoming";?>">Coming Soon</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo Yii::app()->baseUrl."/movieblog/nowshowing";?>">Now showing</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo Yii::app()->baseUrl."/movieblog/index";?>">All movies</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">News</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contact.html">Movie Review</a>
+                    </li>
+                     <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+   
+   <?php echo $content; ?>
 
-<div class="container" id="page">
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'User', 'url'=>array('/admin/user/index'), 'visible'=>!Yii::app()->user->isGuest)
-			
-                            ),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
-
-</div><!-- page -->
+    </div>
+    <!-- /.container -->
+ 
+  
 
 </body>
+
 </html>

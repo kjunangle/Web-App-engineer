@@ -28,6 +28,8 @@
         
        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
        <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+       
+       
        <?php Yii::app()-> clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/assets/js/jquery.bootstrap.newsbox.min.js',CClientScript::POS_END); ?>
        <?php Yii::app()-> clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/assets/js/bootstrap.min.js',CClientScript::POS_END); ?>
 </head>

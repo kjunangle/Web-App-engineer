@@ -1,10 +1,12 @@
 <?php
 
-header('Content-Type: text/xml');
+header('Content-Type: text/json');
  
- 
-$feed_url=file_get_contents("http://digg.com/search/?q=".$_GET['title']."&format=rss");
 
+
+ $url ="http://www.digg.com/search/?q=".rawurlencode($_GET['title'])."&format=rss";
+$feed_url=file_get_contents($url);
+  
 $xml = simplexml_load_string($feed_url);
 echo json_encode($xml, JSON_PRETTY_PRINT), "\n";
 
