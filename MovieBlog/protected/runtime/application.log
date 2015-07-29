@@ -131,6 +131,7 @@ Stack trace:
 REQUEST_URI=/MovieBlog/js/tmdb.js
 HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog
 ---
+<<<<<<< HEAD
 2015/07/28 01:03:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/tmdb.js".' in C:\MAMP\htdocs\yii\framework\web\CWebApplication.php:286
 Stack trace:
 #0 C:\MAMP\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/tmdb.js')
@@ -2568,3 +2569,5 @@ Stack trace:
 REQUEST_URI=/MovieBlog/movieblog/main.php
 HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/MovieDetails?id=102899&title=Ant-Man
 ---
+=======
+>>>>>>> parent of f6a73a3... font end index+movie detail
