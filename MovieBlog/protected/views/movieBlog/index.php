@@ -6,25 +6,10 @@ $this->breadcrumbs=array(
 );
 ?>
 <h1><?php echo $this->id . '/' . $this->action->id."   Test"; ?></h1>
-
-<table>
-    
-    <thead>
-    <th>ID</th>
-    <th>#</th>
-      <th>Name</th>
-    </thead>
-    
-    <tbody id="tbody">
-        <tr></tr><tr></tr>
+<div class="container">
+    <div id="tbody">
         
-    </tbody>
-</table>
-<p> </p>
- 
+        
+    </div>
 
-<div>
-              
-                <div id="pagination">                   
-                </div>
-            </div>
+</div>

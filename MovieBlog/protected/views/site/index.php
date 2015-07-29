@@ -20,9 +20,24 @@ $this->pageTitle=Yii::app()->name;
 <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-     
+      <img src="http://i.imgur.com/vugDGRt.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
     </div>
- 
+    <div class="item">
+      <img src="http://i.imgur.com/8FlRSV1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://i.imgur.com/7teXwQ6.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
   </div>
 
   <!-- Controls -->
