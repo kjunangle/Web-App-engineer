@@ -6,7 +6,7 @@
 
 
 $(document).ready(function() {
-          alert("obj.original_title");
+          
 	       $.ajax({
 		url: 'https://api.themoviedb.org/3/movie/upcoming',
 		type: 'GET',
@@ -14,23 +14,16 @@ $(document).ready(function() {
 		success: function(data) {
                     
                     //alert(pageno);
-                   for(var i=0 ;i<4;i++){
-                       var obj = data.results[i];
+          for(var i=0 ;i<4;i++){
+            var obj = data.results[i];
                        //http://image.tmdb.org/t/p/w500/7SGGUiTE6oc2fh9MjIk5M00dsQd.jpg
 
-                      $("#tbody2").append("<div class='col-md-3'>");
-                      $("#tbody2").append(" <div class='panel panel-default'>");
-                      $("#tbody2").append(" <div class='panel-heading'>");
-                      $("#tbody2").append(" <h4><i class='fa fa-fw fa-check'></i> "+obj.original_title+ "</h4>");
-                      $("#tbody2").append("</div>");
-                      $("#tbody2").append("<div class='panel-body'>");
-                      $("#tbody2").append("<img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+" width='100' height ='150'></td>");
-                      $("#tbody2").append("</div>");
-                      $("#tbody2").append("</div>");
-                      $("#tbody2").append("</div>");
+//           $("#tbody2").append("<div class='col-md-3'><div class='panel panel-default'><div class='panel-hea1ding'><h4 class=""><i class='fa fa-film'></i> "+obj.original_title+ "</h4></div><div class='panel-body'><img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+" width='230' height ='280'></div></div></div>");
+                       
+ $("#tbody2").append("<div class='col-sm-4 col-xs-6 col-md-3'><div class='thumbnail'><div class='caption'><h4><i class='fa fa-film'></i>&nbsp"+obj.original_title+ "</h4></div><img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+"></div></div>");
+  
                    }
-                   
-                   
+                       
                     
 		},
 		dataType: 'json'

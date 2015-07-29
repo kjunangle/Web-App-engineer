@@ -28,7 +28,9 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
             
- 
+            $baseUrl = Yii::app()->baseUrl; 
+             $cs = Yii::app()->getClientScript();
+            $cs->registerScriptFile($baseUrl.'/js/nowshowing.js');
                
 		$this->render('index');
 	}
