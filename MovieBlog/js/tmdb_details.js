@@ -46,7 +46,7 @@ $(document).ready(function() {
                            $("#tbody").append("</td>");
                           
                       $("#tbody").append("</tr>");
-                      
+                      GetTrailer(getUrlParameter('id'));
                       
                       
                      },
@@ -60,5 +60,31 @@ $(document).ready(function() {
     
        
 });
- 
+ function GetTrailer(MovieId){
+    
+     $.ajax({
+		url: 'http://api.themoviedb.org/3/movie/'+MovieId+'/videos',
+		type: 'GET',
+		data: {api_key: 'e97d806c11d3090ae15e404c087f658a'},
+		success: function(data) {
+                    var count=0;
+                   $.each(data.results, function(i, obj) {
+                        if(obj.site==="YouTube"){
+                                if(count===0){
+                                    
+                             $('#trailer').append("<iframe id='ytplayer' type='text/html' width='640' height='390' src='http://www.youtube.com/embed/"+obj.key+"'frameborder='0'/>");
+                         
+                                count++;
+                           }
+                         
+                         }
+                     });
+                   
+                   
+                 
+		},
+		dataType: 'json'
+	});
+    
+}
  

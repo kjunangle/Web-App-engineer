@@ -12,7 +12,7 @@ $(document).ready(function() {
 		type: 'GET',
 		data: {api_key: 'e97d806c11d3090ae15e404c087f658a',page:'1'},
 		success: function(data) {
-                    
+                  GetMovieNowShowingID();
                     //alert(pageno);
           for(var i=0 ;i<4;i++){
             var obj = data.results[i];
@@ -35,4 +35,86 @@ $(document).ready(function() {
        
 });
 
- 
+ function GetMovieNowShowingID(){
+       var count=0;
+     $.ajax({
+		url: 'http://api.themoviedb.org/3/movie/now_playing',
+		type: 'GET',
+		data: {api_key: 'e97d806c11d3090ae15e404c087f658a',page:1},
+                
+		success: function(data) {
+                    
+//                  var picture;
+                   $.each(data.results, function(i, obj) {
+                        
+                       if(i<10){
+                           
+                        GetSlide(obj.id,count);
+                      count++;
+                       }
+                       
+                     });
+                   
+                   
+                 
+		},
+		dataType: 'json'
+	});
+    
+}
+
+ function GetSlide(id,count){
+         
+          
+     $.ajax({
+		url: 'http://api.themoviedb.org/3/movie/'+id+'/images',
+		type: 'GET',
+		data: {api_key: 'e97d806c11d3090ae15e404c087f658a',page:1},
+		success: function(data) {
+              
+                   $.each(data.backdrops, function(i, obj) {
+//              console.log(obj);
+                       //alert(obj.width);
+                    
+                         
+                    
+                       if(obj.width.toString()==="1920"){
+//                             console.log(obj.width);
+
+                                if(i===1){
+                                   if(count===0){
+                                       alert("a");
+                                      $("#item active").append("<img src='http://i.imgur.com/vugDGRt.jpg' > <div class='carousel-caption'>  ...</div>");
+                                   }else{
+                                       
+                                   }
+                                   
+                                     
+                                     
+                                }
+                             
+                              
+                       }else{
+                             if(i===1){
+                                 
+                                 if(count===0){
+                                     console.log(obj);
+                                     }
+                                     else{
+                                         
+                                     }
+                                     
+                                }
+                       }
+                       
+                       
+                       
+                   });
+           
+                
+                 
+		},
+		dataType: 'json'
+	});
+        
+}
