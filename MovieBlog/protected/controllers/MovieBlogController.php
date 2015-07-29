@@ -27,6 +27,10 @@ class MovieBlogController extends Controller
                    $cs->registerScriptFile($baseUrl.'/js/tmdb_upcoming.js');
                     $cs->registerScriptFile($baseUrl.'/js/jquery.paginate.js');
                    $cs->registerCssFile($baseUrl . '/css/stylepagination.css');
+        
+        
+        
+        
 		$this->render('NowShowing');
 	}
         
