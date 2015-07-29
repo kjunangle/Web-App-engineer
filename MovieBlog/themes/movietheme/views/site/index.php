@@ -20,13 +20,19 @@ $this->pageTitle=Yii::app()->name;
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://i.telegraph.co.uk/multimedia/archive/01204/pig1_1204022c.jpg" alt="...">
+      <img src="http://i.imgur.com/vugDGRt.jpg" alt="...">
       <div class="carousel-caption">
         ...
       </div>
     </div>
     <div class="item">
-      <img src="..." alt="...">
+      <img src="http://i.imgur.com/8FlRSV1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://i.imgur.com/7teXwQ6.jpg" alt="...">
       <div class="carousel-caption">
         ...
       </div>
@@ -57,7 +63,10 @@ $this->pageTitle=Yii::app()->name;
                     Coming soon
                 </h1>
             </div>
-            <div class="col-md-3">
+            <div id="tbody2">
+
+            </div>
+            <!-- <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4><i class="fa fa-fw fa-check"></i> IRON MAN 12 </h4>
@@ -101,9 +110,9 @@ $this->pageTitle=Yii::app()->name;
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
-
+        </div>
         <!-- Movie review -->
         <div class="row">
             <div class="col-lg-8">
