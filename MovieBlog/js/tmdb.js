@@ -21,11 +21,8 @@ $(document).ready(function() {
                    for(var i=0 ;i<data.results.length;i++){
                        var obj = data.results[i];
                        //http://image.tmdb.org/t/p/w500/7SGGUiTE6oc2fh9MjIk5M00dsQd.jpg
-                      $("#tbody").append("<tr>");
-                       $("#tbody").append("<td><a href='"+ location+"MovieDetails?id="+obj.id+"&title="+obj.original_title+"'>"+obj.id+"</a></td>");
-                      $("#tbody").append("<td><img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+" width='100' height ='150'></td>");
-                       $("#tbody").append("<td>"+obj.original_title+"</td>");
-                      $("#tbody").append("</tr>");
+                      $("#tbody").append("<div class='jumbotron'><div class='container'><div class='col-md-4'><h4>#"+obj.id+"</h4><img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+" width='200' height='300'></div><div class='col-md-8'><H2>"+obj.title+"</H2>"+obj.overview+"</div></div></div>");
+  
                    }
                    
                    
@@ -65,12 +62,8 @@ function searchPage(pagenumber){
                    for(var i=0 ;i<data.results.length;i++){
                        var obj = data.results[i];
                        //http://image.tmdb.org/t/p/w500/7SGGUiTE6oc2fh9MjIk5M00dsQd.jpg
-                      $("#tbody").append("<tr>");
-                      $("#tbody").append("<td>"+obj.id+"</td>");
-                      $("#tbody").append("<td><img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+" width='100' height ='150'></td>");
-                       $("#tbody").append("<td>"+obj.original_title+"</td>");
-                      $("#tbody").append("</tr>");
-                       $(window).scrollTop(0);
+                      $("#tbody").append("<div class='jumbotron'><div class='container'><div class='col-md-4'><h4>#"+obj.id+"</h4><img src=http://image.tmdb.org/t/p/w500/"+obj.poster_path+" width='200' height='300'></div><div class='col-md-8'><H2>"+obj.title+"</H2>"+obj.overview+"</div></div></div>");
+  
                    }
                    
                    

@@ -70,3 +70,196 @@ Stack trace:
 REQUEST_URI=/MovieBlog/...
 HTTP_REFERER=http://localhost:8888/MovieBlog/
 ---
+2015/07/29 14:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "main.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('main.php')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('main.php')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/main....')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/main.php
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/upcoming
+---
+2015/07/29 14:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/index...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/index.php
+---
+2015/07/29 14:12:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MovieBlog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog
+---
+2015/07/29 14:12:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MovieBlog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/about.html
+---
+2015/07/29 16:11:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('about.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/about...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/upcoming
+---
+2015/07/29 16:12:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/about.html
+---
+2015/07/29 16:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('about.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/about...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/about.html
+---
+2015/07/29 16:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('about.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/about...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/about.html
+---
+2015/07/29 16:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('about.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/about...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/about.html
+---
+2015/07/29 16:12:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('about.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/about...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/about.html
+---
+2015/07/29 16:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('contact.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/conta...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/contact.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about.html".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('about.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('about.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/about...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/about.html
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/contact.html
+---
+2015/07/29 16:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "main.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('main.php')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('main.php')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/main....')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/main.php
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/index
+---
