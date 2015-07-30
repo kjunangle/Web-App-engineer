@@ -11,5 +11,6 @@ $this->breadcrumbs=array(
         
         
     </div>
-
+ <div id="pagination">                   
+                </div>
 </div>

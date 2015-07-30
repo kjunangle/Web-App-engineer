@@ -24,8 +24,9 @@ $(document).ready(function() {
                    // alert(data.channel.item.length);
                    for(var i=0 ;i<data.channel.item.length;i++){
                        //var obj = data.results[i];
-                      $("#digg").append("<a href='"+data.channel.item[i].link+"' class='list-group-item'>"+data.channel.item[i].link+"</a>");
-                    
+                      $("#digg").append("<div>");
+                      $("#digg").append("<iframe src='"+ data.channel.item[i].link+"' height='350' width='800' ></iframe>");
+                      $("#digg").append("</div>");
                   }
                    },
     dataType: 'json'

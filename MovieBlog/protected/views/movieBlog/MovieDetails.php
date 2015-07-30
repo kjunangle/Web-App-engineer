@@ -7,21 +7,26 @@ $this->breadcrumbs=array(
 
 ?>
 <h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
-<div class="container">
-  <div id="tbody">
 
-  </div>
-</div>
-<div class='container'>
-
-  <div class="list-group">
-  <a href="#" class="list-group-item disabled">
-    Digg
-  </a>
-  <div id="digg">
+<table>
+    
+    <thead>
+    <th>ID</th>
+    <th>#</th>
+      <th>Name</th>
+          <th>overview</th>
+          
+         <th> production_companies</th>
+          <th> popularity</th>
+           <th>Vote Average</th>
+    </thead>
+    
+    <tbody id="tbody">
+         
+        
+    </tbody>
+    </table>
+    <div id="digg">
          
         
     </div>
-</div>
-    
-</div>

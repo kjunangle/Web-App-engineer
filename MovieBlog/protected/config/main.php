@@ -8,14 +8,16 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
-        
+       
 	'aliases' => array(
         'bootstrap' => 'ext.bootstrap'
     ),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+////////////////////////////////
 
+///////////
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -24,7 +26,10 @@ return array(
         'bootstrap.components.*',
         'bootstrap.behaviours.*',
         'bootstrap.helpers.*',
-        'bootstrap.widgets.*'
+        'bootstrap.widgets.*',
+       
+            
+            
 	),
 
 'modules'=>array(
@@ -53,7 +58,8 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		
+ 
+            //////////////////////////////////////////////
 		'urlManager'=>array(
 			'urlFormat'=>'path',
             'showScriptName'=>false,

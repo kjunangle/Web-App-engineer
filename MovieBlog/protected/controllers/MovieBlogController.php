@@ -39,9 +39,6 @@ class MovieBlogController extends Controller
                   $cs->registerScriptFile($baseUrl.'/js/Diggjson.js');
 		$this->render('MovieDetails');
 	}
-
-
-	
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

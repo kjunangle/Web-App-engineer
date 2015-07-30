@@ -10,34 +10,13 @@ $this->pageTitle=Yii::app()->name;
   
         
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+ 
 
+ 
 <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="http://i.imgur.com/vugDGRt.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://i.imgur.com/8FlRSV1.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://i.imgur.com/7teXwQ6.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
+
+    
   </div>
 
   <!-- Controls -->
@@ -64,6 +43,9 @@ $this->pageTitle=Yii::app()->name;
                 </h1>
             </div>
             <div id="tbody2">
+                
+                
+                
             </div>
             <!-- <div class="col-md-3">
                 <div class="panel panel-default">
@@ -119,6 +101,27 @@ $this->pageTitle=Yii::app()->name;
             </div>
             <div class ="col-lg-4">
                 <h2 class="page-header">Box Office</h2>
+                
+                <div class="box">
+                    <div class="thai">THAI
+                    <div class="row">
+                        
+                        <div class="col-md-2">Title</div>
+                        <div class="col-md-3">This Week</div>
+                             <div class="col-md-2">Total</div>
+                    </div>
+                    
+                    </div>
+                      <div class="usa">USA
+                    <div class="row">
+                        
+                        <div class="col-md-2">Title</div>
+                        <div class="col-md-3">This Week</div>
+                             <div class="col-md-2">Total</div>
+                    </div>
+                    
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.row -->
