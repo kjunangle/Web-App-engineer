@@ -72,10 +72,10 @@
                     </li>
                     
                     <li>
-                        <a href="contact.html">Movie Review</a>
+                        <a href="contact.html">admin</a>
                     </li>
                      <li>
-                        <a href="contact.html">Contact</a>
+                        <label><input type="text" id="search" class="searchc" ><span class="glyphicon glyphicon-search whiteaa" aria-hidden="true"></span></label>
                     </li>
                     
                 </ul>
