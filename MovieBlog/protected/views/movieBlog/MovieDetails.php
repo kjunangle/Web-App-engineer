@@ -7,9 +7,8 @@ $this->breadcrumbs=array(
 
 ?>
 <h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
-<div class="container">
-  <div id="tbody">
 
+<<<<<<< HEAD
   </div>
 </div>
 
@@ -41,9 +40,27 @@ $this->breadcrumbs=array(
     Digg
   </a>
   <div id="digg">
+=======
+<table>
+    
+    <thead>
+    <th>ID</th>
+    <th>#</th>
+      <th>Name</th>
+          <th>overview</th>
+          
+         <th> production_companies</th>
+          <th> popularity</th>
+           <th>Vote Average</th>
+    </thead>
+    
+    <tbody id="tbody">
+         
+        
+    </tbody>
+    </table>
+    <div id="digg">
+>>>>>>> origin/master
          
         
     </div>
-</div>
-    
-</div>

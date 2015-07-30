@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="main.php">Movie Blog</a>
+                <a class="navbar-brand" href="/MovieBlog">Movie Blog</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,10 +72,17 @@
                     </li>
                     
                     <li>
+<<<<<<< HEAD
+                        <a href="contact.html">Movie Review</a>
+                    </li>
+                     <li>
+                        <a href="contact.html">Contact</a>
+=======
                         <a href="<?php echo Yii::app()->baseUrl."/movieblog/Admin";?>">Admin</a>
                     </li>
                      <li>
                        <form action="/MovieBlog/movieblog/moviedetails?id=211672"> <label><input type="text" id="keyword" class="searchc" ><span class="glyphicon glyphicon-search whiteaa" aria-hidden="true"></span></label></form>
+>>>>>>> origin/master
                     </li>
                     
                 </ul>
