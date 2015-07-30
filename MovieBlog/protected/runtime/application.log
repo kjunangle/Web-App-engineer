@@ -3768,3 +3768,332 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/MovieBlog/user/
 ---
+2015/07/30 14:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/js/au...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/js/autocomplete.js
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=n
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=m
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=ba
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=ni
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=nin
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=ninio
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=min
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=minio
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:16:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=minion
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:20:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=m
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=mi
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=mo
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=m
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=min
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=minio
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=minion
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('suggestion-word...')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/sugge...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/suggestion-word.php?term=min
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "MovieBlog".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('MovieBlog')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('MovieBlog')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('movieblog/Movie...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/movieblog/MovieBlog/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MovieBlog/suggestion-word.php?term=m
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MovieBlog/suggestion-word.php?term=mi
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('js')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('MovieBlog/js/au...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/MovieBlog/js/autocomplete.js
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MovieBlog/suggestion-word.php?term=m
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "suggestion-word.php".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('suggestion-word...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MovieBlog/suggestion-word.php?term=mi
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "movieblog".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('movieblog')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('movieblog')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('MovieBlog/movie...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/MovieBlog/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "movieblog".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('movieblog')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('movieblog')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('MovieBlog/movie...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/MovieBlog/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "movieblog".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('movieblog')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('movieblog')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('MovieBlog/movie...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/MovieBlog/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:48:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "movieblog".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('movieblog')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('movieblog')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('MovieBlog/movie...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/MovieBlog/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "movieblog".' in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('movieblog')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('movieblog')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('MovieBlog/movie...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/MovieBlog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/MovieBlog/MovieBlog/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/
+---
+2015/07/30 14:48:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moviedetails".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('moviedetails')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/movieblog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
+2015/07/30 14:48:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moviedetails".' in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('moviedetails')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/movieblog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/movieblog/moviedetails?
+HTTP_REFERER=http://localhost:8888/MovieBlog/movieblog/moviedetails?id=211672
+---
