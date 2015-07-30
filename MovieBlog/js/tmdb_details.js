@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
 
-                         $("#tbody").append("<div class='jumbotron'><div class='container'><div class='row test123'><div class='col-md-3 test123'><h4>"+getUrlParameter('id')+"</h4><img src=http://image.tmdb.org/t/p/w500/"+data.backdrop_path+" width='400' height ='400'></div><div class='col-md-4 test123'> <h2>"+data.original_title+"</h2><p>"+data.overview+"</p><h4>Product by:</h4><p>"+company+"</p><h4>Rating</h4><p>"+data.vote_average+"</p></div><div class='col-md-5 test123' id='trailer2'></div></div></div></div>");
+                         $("#tbody").append("<div class='thumbnail'><div class='container'><div class='row test123'><div class='col-md-3 test123'><h4>"+getUrlParameter('id')+"</h4><img src=http://image.tmdb.org/t/p/w500/"+data.backdrop_path+" width='330' height ='350'></div><div class='col-md-4 test123'> <h2>"+data.original_title+"</h2><p>"+data.overview+"</p><h4>Product by:</h4><p>"+company+"</p><h4>Rating</h4><p>"+data.vote_average+"</p></div><div class='col-md-5 test123' id='trailer2'></div></div></div></div>");
                         
                           
 

@@ -1,8 +1,8 @@
 
 <?php 
-mysql_connect("localhost:8889","root","root") or die("Cannot connect the Server");       
-mysql_select_db("movieblog_db") or die("Cannot select database");       
-mysql_query("set character set utf8");     
+header('Content-Type: text/json');
+
+include ('db.php')    
 ?>  
 <?php  
 $q="SELECT * FROM review";  
@@ -14,6 +14,9 @@ while($rs=mysql_fetch_array($qr)){
         "review"=>$rs['review']
     );    
 }  
-$json= json_encode($json_data);  
+$json= json_encode($json_data); 
+// $json = json_encode($json_data, JSON_PRETTY_PRINT), "\n";
+
 echo $json;  
+
 ?>
