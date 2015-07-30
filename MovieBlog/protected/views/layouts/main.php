@@ -28,7 +28,7 @@
         
        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
        <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-       
+       <script type="text/javascript" src="/MovieBlog/js/autocomplete.js"></script>
        
        <?php Yii::app()-> clientScript->registerScriptFile(Yii::app()->baseUrl.'/assets/asset/js/jquery.bootstrap.newsbox.min.js',CClientScript::POS_END); ?>
        <?php Yii::app()-> clientScript->registerScriptFile(Yii::app()->baseUrl.'/assets/asset/js/bootstrap.min.js',CClientScript::POS_END); ?>
@@ -72,10 +72,10 @@
                     </li>
                     
                     <li>
-                        <a href="contact.html">admin</a>
+                        <a href="<?php echo Yii::app()->baseUrl."/movieblog/Admin";?>">Admin</a>
                     </li>
                      <li>
-                        <label><input type="text" id="search" class="searchc" ><span class="glyphicon glyphicon-search whiteaa" aria-hidden="true"></span></label>
+                       <form action="/MovieBlog/movieblog/moviedetails?id=211672"> <label><input type="text" id="keyword" class="searchc" ><span class="glyphicon glyphicon-search whiteaa" aria-hidden="true"></span></label></form>
                     </li>
                     
                 </ul>
@@ -84,7 +84,7 @@
         </div>
         <!-- /.container -->
     </nav>
-   
+
    <?php echo $content; ?>
 
         <!-- Footer -->
