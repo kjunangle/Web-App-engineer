@@ -1,7 +1,22 @@
-
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+           <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+        
+       <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+       <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+         <script src="test.js"></script>
+    </head>
+    <body>
         <?php
-         header ('Content-type: application/json; charset=utf-8');
-       $url = 'http://www.nangdee.com/index.php';
+       $url = 'http://www.nangdee.com/';
 $content = file_get_contents($url);
 $first_step = explode( '<div id="nd12Box_line_th">' , $content );
 $second_step = explode("</div>" , $first_step[1] );
@@ -95,29 +110,14 @@ $second_step = explode("</div>" , $first_step[1] );
             )
             
             );
-    
-         
+       echo json_encode($json_data);
         
-     //echo json_encode($json_data, JSON_UNESCAPED_UNICODE);
-  //echo json_encode(array('message' => 'สวัสดีครับ'), JSON_UNESCAPED_UNICODE)
-  echo json_encode(encode_items($json_data));
-  
-  
-        function encode_items($array)
-{
-    foreach($array as $key => $value)
-    {
-        if(is_array($value))
-        {
-            $array[$key] = encode_items($value);
-        }
-        else
-        {
-            $array[$key] = mb_convert_encoding($value, 'Windows-1252', 'UTF-8');
-        }
-    }
-
-    return $array;
-}
         ?>
         
+        <div id="ul">
+            
+            
+        </div>
+    </body>
+</html>
+ 
