@@ -1,0 +1,68 @@
+<?php
+/* @var $this SiteController */
+/* @var $model LoginForm */
+/* @var $form CActiveForm  */
+
+$this->pageTitle=Yii::app()->name . ' - Login';
+$this->breadcrumbs=array(
+	'Login',
+);
+?>
+
+
+
+  <!-- Default panel contents -->
+
+  
+
+<br>
+
+
+<div class="col-md-offset-3 col-md-6">
+<div class="panel panel-default"> 
+	<div class="panel-heading">
+	<center><h1>Login</h1></center>
+</div>
+<div class="panel-body">
+<div class="form-group form">
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'login-form',
+	'enableClientValidation'=>true,
+	'clientOptions'=>array(
+		'validateOnSubmit'=>true,
+	),
+)); ?>
+
+	
+	<center><div class="row">
+		<?php echo $form->labelEx($model,'username'); ?>
+		<?php echo $form->textField($model,'username'); ?>
+		<?php echo $form->error($model,'username'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password'); ?>
+		<?php echo $form->error($model,'password'); ?>
+		
+	</div>
+
+	<div class="row rememberMe">
+		<?php echo $form->checkBox($model,'rememberMe'); ?>
+		<?php echo $form->label($model,'rememberMe'); ?>
+		<?php echo $form->error($model,'rememberMe'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton('Login'); ?>
+	</div>
+	</center>
+
+<?php $this->endWidget(); ?>
+</div><!-- form -->
+  </div>
+
+
+</div>
+</div>
+
